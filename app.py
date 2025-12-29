@@ -19,5 +19,7 @@ hillshade_noon = st.number_input("Hillshade Noon")
 hillshade_3pm = st.number_input("Hillshade 3pm")
 horizontal_distance_to_fire_points = st.number_input("Horizontal Distance to Fire Points")
 
+
+Wilderness Areas (One-hot encoded - 4 binary features)
 st.subheader("Wilderness Area")
 wilderness_area = st.selectbox("Select Area", ["Rawah", "Neota", "Comanche Peak", "Cache la Poudre"])
