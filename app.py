@@ -3,11 +3,11 @@ import pandas as pd
 import joblib
 
 #Load model
-model = joblib.load('model.pkl')  
+model = joblib.load('model.pkl')  # Ensure this file is in the same folder
 
 st.title("🌲 Forest Cover Type Prediction")
 
-#Input fields — numeric features
+Input fields — numeric features
 elevation = st.number_input("Elevation", min_value=0)
 aspect = st.number_input("Aspect", min_value=0)
 slope = st.number_input("Slope", min_value=0)
@@ -19,7 +19,7 @@ hillshade_noon = st.number_input("Hillshade Noon")
 hillshade_3pm = st.number_input("Hillshade 3pm")
 horizontal_distance_to_fire_points = st.number_input("Horizontal Distance to Fire Points")
 
-
-Wilderness Areas (One-hot encoded - 4 binary features)
+#Wilderness Areas (One-hot encoded - 4 binary features)
 st.subheader("Wilderness Area")
 wilderness_area = st.selectbox("Select Area", ["Rawah", "Neota", "Comanche Peak", "Cache la Poudre"])
+wilderness_encoded = [0, 0, 0, 0
