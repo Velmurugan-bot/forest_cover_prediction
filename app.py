@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load('/content/model.pkl')
+model = joblib.load(model.pkl(1)')
 
 st.title("🌲 Forest Cover Type Prediction")
 
