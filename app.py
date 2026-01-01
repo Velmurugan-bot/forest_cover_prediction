@@ -6,7 +6,7 @@ model = joblib.load('model.pkl')  # Ensure this file is in the same folder
 
 st.title("🌲 Forest Cover Type Prediction")
 
-Input fields — numeric features
+#Input fields - numeric features
 elevation = st.number_input("Elevation", min_value=0)
 aspect = st.number_input("Aspect", min_value=0)
 slope = st.number_input("Slope", min_value=0)
